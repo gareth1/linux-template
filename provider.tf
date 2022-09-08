@@ -3,7 +3,7 @@ terraform {
 backend "s3" {
   bucket    = "s3_bucket_name"
   key       = "states/tableauterraform/terraform.tfstate"
-  region    =  "region for deployment"
+  region    =  "us-west-2"
   role_arn  = "arn for aws IAM role"
     }
 }
