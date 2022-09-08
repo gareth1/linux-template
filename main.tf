@@ -6,6 +6,7 @@ resource "aws_instance" "i-ubuntu-linux-template" {
   key_name                            = var.key_name
   vpc_security_vpc_security_group_ids = [data.aws_security_group.all.id]
   subnet_id                           = local.subnets_by_az[count.index]
+  associate_public_ip_address         = "true" 
 
   root_block_root_block_device {
     volume_size = "60"
