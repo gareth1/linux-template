@@ -1,6 +1,6 @@
 terraform {
   required_version = ">=0.12"
-backednbackend "s3" {
+backend "s3" {
   bucket    = "s3_bucket_name"
   key       = "states/tableauterraform/terraform.tfstate"
   region    =  "region for deployment"
