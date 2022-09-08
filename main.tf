@@ -16,6 +16,7 @@ resource "aws_instance" "i-ubuntu-linux-template" {
   tags = {
     "name" = "i-ubuntu-linux-template"
   }
+
 }
 
 #client access 
@@ -39,4 +40,4 @@ egress {
     to_port   = 0
     protocol  = -1
     cidr_blocks = ["0.0.0.0/0"]
-}
+ }
